@@ -1,0 +1,109 @@
+Hi! I'm ready to start Day 1 of our intensive Spring Boot learning journey.
+
+=== MY SITUATION ===
+- Experience: 2.8 years in Spring Boot
+- Current Skill Level: 6.5/10
+- Goal: Reach 8/10 in 30 days
+- Available Today: 6-8 hours (Day 1 of 3-day leave)
+- Available Weekdays (after leave): 3.5 hours
+- Available Weekends: 6-8 hours
+
+=== WHAT WE'VE COMPLETED ===
+✅ Project Setup: auth-service Spring Boot project
+✅ Entities: User, RefreshToken, BlacklistedToken
+✅ Enums: Role, BlacklistReason
+✅ Repositories: UserRepository, RefreshTokenRepository, BlacklistedTokenRepository
+✅ Request DTOs: RegisterRequest, LoginRequest, RefreshTokenRequest, LogoutRequest
+✅ Response DTOs: AuthResponse, UserResponse, ApiResponse, ErrorResponse
+
+=== TODAY'S LEARNING GOALS (Day 1) ===
+
+THEORY TO LEARN:
+1. JWT (JSON Web Tokens)
+   - What is JWT and why use it?
+   - JWT structure (Header, Payload, Signature)
+   - How to generate JWT
+   - How to validate JWT
+   - Claims and expiration
+   - Signing algorithms (HS256)
+
+2. Service Layer Pattern
+   - Why separate service layer?
+   - Service vs Repository
+   - Business logic placement
+   - Transaction management basics
+
+3. Dependency Injection
+   - Constructor injection vs @Autowired
+   - Why constructor injection is better
+   - Service dependencies
+
+PRACTICAL TO BUILD:
+1. JwtService
+   - generateAccessToken(User user)
+   - validateToken(String token)
+   - extractUsername(String token)
+   - extractExpiration(String token)
+   - isTokenExpired(String token)
+
+2. UserService
+   - findByUsername(String username)
+   - findByEmail(String email)
+   - findByUsernameOrEmail(String usernameOrEmail)
+   - existsByUsername(String username)
+   - existsByEmail(String email)
+   - createUser(RegisterRequest request)
+
+3. RefreshTokenService
+   - createRefreshToken(User user)
+   - findByToken(String token)
+   - verifyExpiration(RefreshToken token)
+   - deleteByUser(User user)
+
+=== MY LEARNING STYLE ===
+- I prefer understanding "WHY" before "HOW"
+- I like real-world analogies
+- I want to understand the flow completely
+- I ask questions when confused
+- I want to apply concepts immediately
+
+=== TODAY'S SCHEDULE ===
+Available: 6-8 hours
+
+Proposed breakdown:
+- Block 1 (2 hours): Learn JWT theory + Start JwtService
+- Block 2 (2 hours): Complete JwtService + Test it
+- Block 3 (2 hours): Learn & Build UserService
+- Block 4 (2 hours): Learn & Build RefreshTokenService
+
+=== WHAT I NEED FROM YOU ===
+1. Explain each concept before we code it
+2. Show me the complete flow/architecture
+3. Guide me step-by-step for implementation
+4. Review my code and give feedback
+5. Answer my "why" questions patiently
+6. Help me understand, not just copy code
+
+=== DEPENDENCIES NEEDED ===
+Please tell me if I need to add any new dependencies to pom.xml for:
+- JWT generation/validation
+- Any other libraries needed today
+
+=== MY QUESTIONS BEFORE WE START ===
+1. What is the complete flow of JWT authentication?
+2. Where does JWT fit in our auth service?
+3. How do all these services work together?
+
+=== EXPECTED OUTCOME BY END OF DAY 1 ===
+✅ Deep understanding of JWT
+✅ Working JwtService (can generate & validate tokens)
+✅ Working UserService (can perform user operations)
+✅ Working RefreshTokenService (can manage refresh tokens)
+✅ All services tested and working
+✅ Clear understanding of service layer pattern
+
+=== READY TO START ===
+I'm ready to learn and code for the next 6-8 hours.
+Please start by explaining the JWT concept and overall architecture, then we'll build step by step.
+
+Let's begin! 🚀
