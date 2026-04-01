@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class LoginRequest {
 
     @NotBlank(message = "usernameOrEmail cannot be null")
-    private String usernameOrEmail;
+    private String email;
 
     @NotBlank(message = "password cannot be blanck")
     private String password;

@@ -23,7 +23,7 @@ public class UserResponse {
     @JsonProperty("phone_number")
     private String phoneNumber;
 
-    private String  role;
+    private String  role="CLIENT";
 
     private Boolean enabled;
 
